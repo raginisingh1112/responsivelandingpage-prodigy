@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragini Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f5f5; /* Changed background color to a light gray for a professional look */
+            color: #333; /* Changed text color to a dark gray for better contrast */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: #f5f5f5; /* Changed background color to a light gray for a professional look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #007bff; /* Added a bright blue color for the header text */
+            margin-bottom: 20px; /* Added a fair gap between sections */
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: auto;
+            display: block;
+            border: 2px solid #007bff; /* Added a bright blue border to the profile photo */
+        }
+        .summary {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 20px;
+            color: #007bff; /* Changed summary text color to a bright blue for visibility */
+        }
+        nav {
+            text-align: right;
+            padding: 20px 0;
+            background: #f5f5f5; /* Changed background color to a light gray for a professional look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+            margin-bottom: 20px; /* Added a fair gap between sections */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #333; /* Changed text color to a dark gray for better contrast */
+            transition: color 0.5s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff; /* Changed hover color to a bright blue for visibility */
+        }
+        section {
+            padding: 50px 0;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: #f5f5f5; /* Changed background color to a light gray for a professional look */
+            margin-bottom: 20px; /* Added a fair gap between sections */
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff; /* Changed section title color to a bright blue for visibility */
+        }
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            background: #f5f5f5; /* Changed background color to a light gray for a professional look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1000;
+            color: #007bff; /* Changed footer text color to a bright blue for visibility */
+            margin-top: 20px; /* Added a fair gap between sections */
+        }
+        @media (max-width: 768px) {
+            header, nav, section, footer {
+                padding: 20px 0;
+                margin-bottom: 20px; /* Added a fair gap between sections */
+            }
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #007bff;">Ragini Singh</h1>
+        <img src="your-photo.jpg" alt="Ragini Singh" class="profile-photo">
+        <p class="summary">Engineering Student | Proficient in HTML, C++, Python, DBMS, and Java | Passionate about Data Analysis, UI/UX, AI, and Innovative Solutions</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Virtual Assistant For Visually Impaired</strong> Addressing the need for an advanced Virtual Assistant with speech Recognition and Speaking Capabilities to empower visually impaired individuals in navigating the digital world.</li>
+            <li><strong>Password Generator</strong> A password generator is a useful tool that generates strong and random passwords for users. This project aims to create a password generator application using Python, allowing users to specify the length and complexity of the password.</li>
+            <li><strong>Project Title 3:</strong> Brief description of the project.</li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is Ragini Singh, and I am an engineering student at Mumbai University, pursuing a Bachelor’s degree in Engineering. I have a strong foundation in programming languages such as C++, Python, and Java, and I am particularly interested in artificial intelligence, systems engineering, and data analysis.
+        </p>
+        <p>
+            During my studies, I have completed coursework in CSS, HTML, Python, DBMS, which has equipped me with the theoretical and practical skills needed to tackle engineering challenges. I have also participated in hands-on projects, such as Virtual Assistant For Visually Impaired.
+        </p>
+        <p>
+            In addition to my academic pursuits, I recently completed an internship at Codesoft as a Python intern. This experience has enhanced my skills and has fueled my passion for innovation.
+        </p>
+        <p>
+            I am eager to apply my knowledge and skills in real-world scenarios and continue to grow as an engineer.
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="iraginisingh12@gmail.com">iraginisingh12@gmail.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ragini Singh. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('nav').style.backgroundColor = '#333'; /* Changed background color to a dark gray for better contrast when scrolled */
+                document.querySelector('nav ul li a').style.color = '#f5f5f5'; /* Changed text color to a light gray for better contrast when scrolled */
+            } else {
+                document.querySelector('nav').style.backgroundColor = '#f5f5f5'; /* Changed background color back to a light gray when not scrolled */
+                document.querySelector('nav ul li a').style.color = '#333'; /* Changed text color back to a dark gray when not scrolled */
+            }
+        });
+    </script>
+</body>
+</html>
